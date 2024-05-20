@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fictional Military Website - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to the Fictional Military Website</h2>
+        <p>Please enter the access code to proceed:</p>
+        <form action="access.php" method="post">
+            <input type="password" name="access_code" placeholder="Enter access code" required>
+            <br><br>
+            <input type="submit" value="Enter">
+        </form>
+    </div>
+</body>
+</html>
