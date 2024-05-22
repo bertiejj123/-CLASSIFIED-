@@ -3,10 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <title>Classified</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Page</h1>
-    <p>This is a simple web page served from GitHub Pages.</p>
+    <h1>CLASSIFIED</h1>
+    <p>Please enter the code:</p>
+    <input type="text" id="codeInput" placeholder="Enter code">
+    <button onclick="checkCode()">Submit</button>
+    <script>
+        function checkCode() {
+            const code = document.getElementById('codeInput').value;
+            if (code === '1489') {
+                window.location.href = 'welcome.html';
+            } else {
+                alert('Incorrect code. Please try again.');
+            }
+        }
+    </script>
 </body>
 </html>
